@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タスクバブル</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sidebar">
+        <h2>タスクバブル</h2>
+        <div id="calendar-container">
+            <div id="calendar-header">
+                <button id="prev-month">＜</button>
+                <span id="current-month"></span>
+                <button id="next-month">＞</button>
+            </div>
+            <div id="calendar-weekdays">
+                <div>日</div>
+                <div>月</div>
+                <div>火</div>
+                <div>水</div>
+                <div>木</div>
+                <div>金</div>
+                <div>土</div>
+            </div>
+            <div id="calendar-days"></div>
+        </div>
+        <button id="undo-button">Undo</button>
+    </div>
+
+    <div id="bubble-container">
+        <div id="movement-area"></div>
+    </div>
+
+    <div id="input-container">
+        <input type="text" id="todo-input" placeholder="タスクを入力">
+        <button id="add-button">追加</button>
+    </div>
+
+    <!-- ダークモード切り替えボタン -->
+    <button id="theme-toggle" class="theme-toggle">ダークモード</button>
+
+    <!-- 使い方ガイドボタン -->
+    <button id="guide-button" class="guide-button">使い方ガイド</button>
+
+    <!-- 使い方ガイドモーダル -->
+    <div id="guide-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>使い方ガイド</h2>
+            <p>このページでは、アプリケーションの使い方を説明します。</p>
+            <p>1. タスクを入力して、バブルとして追加します。</p>
+            <p>2. バブルをクリックして削除できます。</p>
+            <p>3. ダークモード切り替えボタンでテーマを変更できます。</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
